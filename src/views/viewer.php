@@ -21,7 +21,7 @@ JS);
 
 $form = ActiveForm::begin([
 	'id' => "{$moduleId}-form-{$widgetId}",
-	'action' => ["/{$moduleId}", 'file' => $url],
+	'action' => $url,
 	'options' => [
 		'target' => "{$moduleId}-iframe-{$widgetId}",
 	],
