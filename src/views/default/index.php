@@ -205,10 +205,7 @@ $this->registerJs($js);
 
 				<div class="horizontalToolbarSeparator"></div>
 
-				<button id="presentationMode" class="secondaryToolbarButton" title="Switch to Presentation Mode" tabindex="54"
-					data-l10n-id="pdfjs-presentation-mode-button">
-					<span data-l10n-id="pdfjs-presentation-mode-button-label">Presentation Mode</span>
-				</button>
+
 
 				<a href="#" id="viewBookmark" class="secondaryToolbarButton" title="Current Page (View URL from Current Page)"
 					tabindex="55" data-l10n-id="pdfjs-bookmark-button">
@@ -359,12 +356,15 @@ $this->registerJs($js);
 							<span data-l10n-id="pdfjs-print-button-label">Print</span>
 						</button>
 
+                        <button id="presentationMode" class="toolbarButton hiddenMediumView" title="Switch to Presentation Mode" tabindex="54"
+                                data-l10n-id="pdfjs-presentation-mode-button">
+                            <span data-l10n-id="pdfjs-presentation-mode-button-label">Presentation Mode</span>
+                        </button>
+
 						<button id="download" class="toolbarButton hiddenMediumView" title="Save" tabindex="42"
 							data-l10n-id="pdfjs-save-button">
 							<span data-l10n-id="pdfjs-save-button-label">Save</span>
 						</button>
-
-						<div class="verticalToolbarSeparator hiddenMediumView"></div>
 
 						<button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="43"
 							data-l10n-id="pdfjs-tools-button" aria-expanded="false" aria-controls="secondaryToolbar">
