@@ -27,7 +27,7 @@ class DefaultController extends Controller
 	public function actionIndex($file)
 	{
 		$title = 'PDF Viewer';
-		$sections = [];
+		$sections = $this->module->defaultSections;
 		if (Yii::$app->request->getIsPost()) {
 			/** @var array $sections */
 			$sections = Yii::$app->request->post();
